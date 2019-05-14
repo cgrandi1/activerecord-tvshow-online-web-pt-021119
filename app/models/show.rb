@@ -12,7 +12,7 @@ class Show < ActiveRecord::Base
   def self.lowest_rating
     show = Show.minimum(:rating)
   end
-  def self.least_popular_show
+def self.least_popular_show
   show = Show.lowest_rating
   Show.find_by(rating: show)
 end
