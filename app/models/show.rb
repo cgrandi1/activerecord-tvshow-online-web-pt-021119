@@ -13,5 +13,6 @@ class Show < ActiveRecord::Base
     show = Show.minimum(:rating)
   end
   show = Show.lowest_rating
-  Show.find_by(raing: show)
+  Show.find_by(rating: show)
+end
 end
