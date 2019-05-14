@@ -1,4 +1,4 @@
-class Show
+class Show <ActiveRecord::Migration[5.2]
 
   def change
     create_table shows do |t|
