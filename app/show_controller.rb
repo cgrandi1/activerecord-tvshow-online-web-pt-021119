@@ -1,5 +1,5 @@
 
 def highest_rating
-  show = Show.maximum(:rating)
+  show = Show.where(:name).maximum(:rating)
   show
 end
